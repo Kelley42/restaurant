@@ -1,19 +1,13 @@
-
-
 const menu = () => {
     const content = document.querySelector("#content");
 
     const header = document.createElement("div");
     header.classList.add("header");
-    header.style.width = "200px";
-    header.style.height = "200px";
     header.innerHTML = "Menu";
     content.appendChild(header);
 
     const description = document.createElement("div");
     description.classList.add("description");
-    description.style.width = "200px";
-    description.style.height = "200px";
     description.innerHTML = "menu description";
     content.appendChild(description);
 
