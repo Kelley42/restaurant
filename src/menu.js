@@ -1,15 +1,15 @@
 const menu = () => {
     const content = document.querySelector("#content");
 
-    const header = document.createElement("div");
-    header.classList.add("header");
-    header.innerHTML = "Menu";
-    content.appendChild(header);
+    const menuHeader = document.createElement("div");
+    menuHeader.classList.add("menu-header");
+    menuHeader.innerHTML = "Menu";
+    content.appendChild(menuHeader);
 
-    const description = document.createElement("div");
-    description.classList.add("description");
-    description.innerHTML = "menu description";
-    content.appendChild(description);
+    const menuDescription = document.createElement("div");
+    menuDescription.classList.add("menu-description");
+    menuDescription.innerHTML = "Try one of our mouth-watering meals.";
+    content.appendChild(menuDescription);
 
     let menuItems = [
         ["Classic Hot Dog", 2, "All-beef hot dog in a potato bun topped with ketchup and melted cheese"],

@@ -1,15 +1,25 @@
 const contact = () => {
     const content = document.querySelector("#content");
     
-    const header = document.createElement("div");
-    header.classList.add("header");
-    header.innerHTML = "Contact Header";
+    const contactHeader = document.createElement("div");
+    contactHeader.classList.add("contact-header");
+    contactHeader.innerHTML = "Contact Us";
     content.appendChild(header);
 
-    const description = document.createElement("div");
-    description.classList.add("description");
-    description.innerHTML = "contact info";
-    content.appendChild(description);
+    const contactPhone = document.createElement("div");
+    contactPhone.classList.add("contact-phone");
+    contactPhone.innerHTML = "(123) 456-7890";
+    content.appendChild(contactPhone);
+
+    const contactAddress = document.createElement("div");
+    contactAddress.classList.add("contact-address");
+    contactAddress.innerHTML = "4242 Beach Blvd.";
+    content.appendChild(contactAddress);
+
+    const contactEmail = document.createElement("div");
+    contactEmail.classList.add("contact-email");
+    contactEmail.innerHTML = "stingray_beachhouse_bar@some_email.com";
+    content.appendChild(contactEmail);
 };
 
 export { contact };
