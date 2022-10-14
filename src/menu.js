@@ -1,5 +1,6 @@
 const menu = () => {
     const content = document.querySelector("#content");
+    content.classList.add("menu-content");
 
     const menuHeader = document.createElement("div");
     menuHeader.classList.add("menu-header");
@@ -38,7 +39,7 @@ function showMenu(menuItems) {
     
         const price = document.createElement("p");
         price.classList.add("price");
-        price.innerHTML = menuItems[item][1];
+        price.innerHTML = `$${menuItems[item][1]}.00`;
     
         const foodDescription = document.createElement("p");
         foodDescription.classList.add("food-description");

@@ -1,10 +1,11 @@
 const contact = () => {
     const content = document.querySelector("#content");
+    content.classList.add("contact-content");
     
     const contactHeader = document.createElement("div");
     contactHeader.classList.add("contact-header");
     contactHeader.innerHTML = "Contact Us";
-    content.appendChild(header);
+    content.appendChild(contactHeader);
 
     const contactPhone = document.createElement("div");
     contactPhone.classList.add("contact-phone");

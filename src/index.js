@@ -7,19 +7,25 @@ nav();
 home();
 const menuTab = document.querySelector(".menu-tab");
 menuTab.addEventListener("click", () => {
-    content.innerHTML = "";
+    reset();
     menu();
 });
 const homeTab = document.querySelector(".home-tab");
 homeTab.addEventListener("click", () => {
-    content.innerHTML = "";
+    reset();
     home();
 });
 const contactTab = document.querySelector(".contact-tab");
 contactTab.addEventListener("click", () => {
-    content.innerHTML = "";
+    reset();
     contact();
 });
+
+function reset() {
+    const currentContent = document.querySelector("#content");
+    currentContent.innerHTML = "";
+    currentContent.classList = "";
+};
 
 
 

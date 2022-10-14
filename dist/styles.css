@@ -74,7 +74,37 @@ button {
     margin-top: 50px;
 }
 
-.home-container {
+.menu-header,
+.menu-description {
+    align-self: center;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+}
+
+.menu-header,
+.contact-header {
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.menu-description {
+    margin-bottom: 15px;
+}
+
+.menu-items-container {
+    display: flex;
+}
+
+.item {
+    margin: 20px 0 20px 0;
+    border-bottom: 2px solid var(--gray-color);
+}
+
+.home-content {
     display: flex;
     flex-direction: column;
     justify-content: center;

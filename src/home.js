@@ -1,25 +1,21 @@
 const home = () => {
     const content = document.querySelector("#content");
-    
-    const homeContainer = document.createElement("div");
-    homeContainer.classList.add("home-container");
+    content.classList.add("home-content");
 
     const homeHeader = document.createElement("div");
     homeHeader.classList.add("home-header");
     homeHeader.innerHTML = "Stingray Beachhouse Bar & Grill";
-    homeContainer.appendChild(homeHeader);
+    content.appendChild(homeHeader);
 
     const homeDescription = document.createElement("div");
     homeDescription.classList.add("home-description");
     homeDescription.innerHTML = "Your destination for excellent local cuisine and beach favorites";
-    homeContainer.appendChild(homeDescription);
+    content.appendChild(homeDescription);
 
     const homeHours = document.createElement("div");
     homeHours.classList.add("home-hours");
     homeHours.innerHTML = `<div class="hours">Hours:</div><p>Sat-Sun: 10:00 AM - 10:00 PM</p><p>Mon-Fri: 8:00 AM - 8:00 PM</p>`;
-    homeContainer.appendChild(homeHours);
-
-    content.appendChild(homeContainer);
+    content.appendChild(homeHours);
 };
 
 export { home };

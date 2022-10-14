@@ -1,5 +1,6 @@
 const nav = () => {
     const header = document.querySelector("#header");
+    header.classList.add("header");
 
     const navbar = document.createElement("div");
     navbar.classList.add("navbar");
